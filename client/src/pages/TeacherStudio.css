@@ -1,0 +1,273 @@
+.teacher-studio {
+  display: grid;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.teacher-studio-heading {
+  padding: 1.5rem;
+  border: 1px solid #ccebe2;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #effcf7, #fffdf6);
+}
+
+.teacher-studio-eyebrow {
+  color: var(--primary);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.teacher-studio-heading h2 {
+  margin: 0.2rem 0;
+}
+
+.teacher-studio-heading > div > p:last-child,
+.studio-panel-heading p {
+  color: var(--text-muted);
+}
+
+.studio-panel {
+  min-width: 0;
+}
+
+.studio-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.studio-panel-heading > span {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--primary-subtle);
+  font-size: 1.45rem;
+}
+
+.studio-panel-heading h3 {
+  margin-bottom: 0.15rem;
+}
+
+.studio-import {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--primary-dark);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.studio-import input {
+  width: min(230px, 42vw);
+  padding: 0;
+  border: 0;
+  font-size: 0.8rem;
+}
+
+.studio-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.studio-form label {
+  display: grid;
+  gap: 0.3rem;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.studio-form input,
+.studio-form select,
+.studio-form textarea {
+  min-width: 0;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.studio-question {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+}
+
+.studio-question legend {
+  padding: 0 0.35rem;
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.studio-student-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.5rem;
+  max-height: 12rem;
+  overflow-y: auto;
+  padding: 0.7rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+}
+
+.studio-student-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+}
+
+.studio-student-list input {
+  width: 1rem;
+  min-width: 1rem;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--primary);
+}
+
+.studio-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.studio-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.65rem;
+}
+
+.studio-saved-list {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 1.2rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.studio-saved-list p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.3rem 1rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.studio-saved-list p span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.studio-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.studio-group {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-top: 4px solid #e8a23a;
+  border-radius: 13px;
+  background: #fffdf8;
+}
+
+.studio-group.group-practice {
+  border-top-color: #3b82f6;
+  background: #f7faff;
+}
+
+.studio-group.group-extension {
+  border-top-color: #10b981;
+  background: #f5fdf9;
+}
+
+.studio-group-subject {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.studio-group h4 {
+  margin: 0.2rem 0 0.4rem;
+}
+
+.studio-group p {
+  min-height: 3.2em;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.studio-group strong {
+  display: block;
+  margin: 0.6rem 0 0.3rem;
+  color: var(--primary-dark);
+  font-size: 0.85rem;
+}
+
+.studio-group ul {
+  display: grid;
+  gap: 0.3rem;
+  list-style: none;
+}
+
+.studio-group li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.studio-group li span {
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.studio-data-note {
+  margin-top: 0.85rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.studio-message {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+}
+
+.studio-message.error {
+  background: #fff1f2;
+  color: #b91c1c;
+}
+
+.studio-message.success {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.teacher-studio-loading {
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 560px) {
+  .studio-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-panel {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,97 @@
+.teacher-student-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  min-width: 230px;
+}
+
+.teacher-student-actions .btn {
+  white-space: nowrap;
+}
+
+.teacher-parent-report {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid rgba(8, 126, 114, 0.25);
+  background: linear-gradient(135deg, #f0fdfa, #fff 70%);
+}
+
+.teacher-report-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.teacher-report-heading h2 {
+  font-size: 1.2rem;
+}
+
+.teacher-report-heading p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.teacher-report-heading > span {
+  color: var(--accent-dark);
+  font-size: 1.5rem;
+}
+
+.teacher-report-copy {
+  margin-top: 1rem;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.teacher-report-error,
+.teacher-load-error {
+  color: var(--danger);
+}
+
+.teacher-load-error {
+  padding: 1.25rem;
+}
+
+.teacher-knowledge-section {
+  margin-bottom: 1.5rem;
+}
+
+.teacher-knowledge-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.teacher-knowledge-controls h2 {
+  margin-bottom: 0.25rem;
+}
+
+.teacher-knowledge-controls p {
+  color: var(--text-muted);
+}
+
+.teacher-knowledge-controls label {
+  display: grid;
+  gap: 0.3rem;
+  min-width: min(100%, 240px);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.teacher-knowledge-controls select {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: white;
+  color: var(--text);
+  font: inherit;
+}
+
+@media (max-width: 700px) {
+  .teacher-student-actions {
+    min-width: 170px;
+  }
+}

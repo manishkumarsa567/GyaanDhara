@@ -1,0 +1,228 @@
+.ncert-reader {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.ncert-back-link {
+  display: inline-flex;
+  margin-bottom: 1.25rem;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.ncert-reader-header {
+  margin-bottom: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: 24px;
+  color: #fff;
+  background: linear-gradient(125deg, #115e59, #0f766e 60%, #15803d);
+}
+
+.ncert-reader-subject,
+.ncert-reader-header p {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.ncert-reader-header h1 {
+  margin: 0.55rem 0;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+.ncert-completion-badge {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  color: #064e3b;
+  background: #d1fae5;
+  font-weight: 700;
+}
+
+.ncert-reading-card,
+.ncert-quiz {
+  padding: clamp(1.2rem, 4vw, 2rem);
+}
+
+.ncert-reading-heading,
+.ncert-quiz-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ncert-reading-heading h2,
+.ncert-quiz-heading h2 {
+  margin: 0;
+}
+
+.ncert-reading-text {
+  margin: 1.25rem 0;
+  font-family: Georgia, "Noto Serif", "Noto Serif Devanagari", serif;
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+.ncert-source-note {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.25rem 0.75rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 14px;
+  color: var(--text-muted);
+  background: #f0fdfa;
+}
+
+.ncert-source-note p {
+  margin: 0;
+}
+
+.ncert-source-note a {
+  grid-column: 2;
+  width: fit-content;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.ncert-start-quiz {
+  margin-top: 0.75rem;
+}
+
+.ncert-quiz {
+  margin-top: 1.25rem;
+}
+
+.ncert-quiz-heading {
+  margin-bottom: 1.25rem;
+}
+
+.ncert-quiz-heading > span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.ncert-kicker {
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.ncert-questions {
+  display: grid;
+  gap: 1rem;
+}
+
+.ncert-question {
+  min-width: 0;
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+.ncert-question legend {
+  max-width: 100%;
+  padding: 0 0.35rem;
+  font-weight: 750;
+  line-height: 1.55;
+}
+
+.ncert-question legend span {
+  margin-right: 0.35rem;
+  color: var(--primary);
+}
+
+.ncert-answer-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.65rem;
+  margin-top: 0.8rem;
+}
+
+.ncert-answer-options label,
+.ncert-true-false button {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem;
+  border: 1px solid #dbe3eb;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.ncert-answer-options label.selected,
+.ncert-true-false button.selected {
+  border-color: var(--primary);
+  background: #f0fdfa;
+}
+
+.ncert-true-false {
+  display: flex;
+  gap: 0.65rem;
+  margin-top: 0.8rem;
+}
+
+.ncert-true-false button {
+  min-width: 100px;
+  justify-content: center;
+}
+
+.ncert-question input[type="text"] {
+  width: min(100%, 360px);
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.ncert-form-error {
+  color: #b91c1c;
+}
+
+.ncert-quiz-result {
+  text-align: center;
+}
+
+.ncert-result-score {
+  color: var(--primary);
+  font-size: 3rem;
+  font-weight: 850;
+}
+
+.ncert-result-review {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.25rem 0;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.ncert-result-review p {
+  margin: 0.35rem 0;
+  color: var(--text-muted);
+}
+
+.ncert-result-review span {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+.ncert-chapter-error {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+@media (max-width: 620px) {
+  .ncert-reading-heading,
+  .ncert-quiz-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

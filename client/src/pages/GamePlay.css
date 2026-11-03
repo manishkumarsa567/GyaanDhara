@@ -1,0 +1,233 @@
+.game-play-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.game-play-header {
+  margin-bottom: 2rem;
+}
+
+.game-play-nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.back-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--primary);
+  text-decoration: none;
+  background: #f0fdfa;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #ccfbf1;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  background: #ccfbf1;
+  transform: translateX(-2px);
+}
+
+.manual-toggle-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #ffffff;
+  color: var(--primary);
+  border: 1.5px solid #a7f3d0;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.08);
+  transition: all 0.2s ease;
+}
+
+.manual-toggle-btn:hover {
+  background: #f0fdf4;
+  border-color: #10b981;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.15);
+}
+
+.manual-toggle-btn.active {
+  background: #10b981;
+  color: #ffffff;
+  border-color: #10b981;
+}
+
+.game-play-title {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: #ffffff;
+  padding: 1.5rem 1.75rem;
+  border-radius: 20px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.game-play-icon {
+  font-size: 2.75rem;
+  background: #f0fdfa;
+  border: 1.5px solid #ccfbf1;
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.game-play-title h1 {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 0.25rem;
+}
+
+.game-play-title p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.game-complete {
+  text-align: center;
+  max-width: 480px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.08);
+}
+
+.game-complete-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.game-complete.passed {
+  border: 2px solid #10b981;
+  background: linear-gradient(180deg, #ecfdf5 0%, #ffffff 100%);
+}
+
+.game-complete.failed {
+  border: 2px solid #ef4444;
+  background: linear-gradient(180deg, #fef2f2 0%, #ffffff 100%);
+}
+
+.game-accuracy {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0.75rem 0;
+}
+
+.game-hints {
+  text-align: left;
+  margin: 1.25rem 0;
+  padding: 1.25rem;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 14px;
+}
+
+.game-hints ul {
+  margin: 0.5rem 0 0 1.2rem;
+  color: #92400e;
+}
+
+.game-manual {
+  margin-bottom: 1.75rem;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-left: 5px solid var(--primary);
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.manual-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.manual-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  line-height: 1;
+  transition: all 0.2s;
+}
+
+.manual-close-btn:hover {
+  color: #ef4444;
+  background: #fee2e2;
+}
+
+.game-manual h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.game-manual ol {
+  margin: 0.85rem 0 0 1.25rem;
+  line-height: 1.6;
+}
+
+.manual-tip {
+  margin-top: 0.85rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  background: #f8fafc;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.manual-fallback {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.game-mastery {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+
+.level-unlock,
+.level-max {
+  font-weight: 700;
+  margin-top: 0.85rem;
+  color: var(--accent);
+}
+

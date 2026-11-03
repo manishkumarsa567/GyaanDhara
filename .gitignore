@@ -1,0 +1,43 @@
+﻿# Dependencies
+node_modules/
+*/node_modules/
+server/node_modules/
+client/node_modules/
+
+# Production builds
+dist/
+*/dist/
+client/dist/
+
+# Environment files & Secrets
+.env
+.env.*
+*.env
+server/.env
+client/.env
+!.env.example
+!server/.env.example
+!client/.env.example
+
+# Runtime & database data
+server/data/
+*.db
+*.sqlite
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

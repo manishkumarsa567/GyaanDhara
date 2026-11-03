@@ -1,0 +1,150 @@
+.knowledge-graph {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  margin: 1.5rem 0;
+}
+
+.knowledge-graph-heading h2 {
+  margin: 0 0 0.25rem;
+}
+
+.knowledge-graph-heading p,
+.knowledge-graph-empty {
+  color: var(--text-muted);
+}
+
+.knowledge-graph-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.knowledge-graph-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.knowledge-graph-legend-item i {
+  display: grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-style: normal;
+}
+
+.knowledge-graph-subjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.9rem;
+}
+
+.knowledge-subject {
+  padding: 0.9rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: #fbfdfc;
+}
+
+.knowledge-subject h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+}
+
+.knowledge-node-list {
+  display: grid;
+  gap: 0.7rem;
+  list-style: none;
+}
+
+.knowledge-node {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  column-gap: 0.6rem;
+  align-items: center;
+}
+
+.knowledge-node:not(:last-child)::after {
+  position: absolute;
+  top: 2rem;
+  bottom: -0.75rem;
+  left: 0.92rem;
+  width: 2px;
+  background: var(--border);
+  content: '';
+}
+
+.knowledge-node-marker {
+  z-index: 1;
+  display: grid;
+  width: 1.9rem;
+  height: 1.9rem;
+  place-items: center;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: white;
+  font-weight: 900;
+}
+
+.knowledge-node-info {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.knowledge-node-info a,
+.knowledge-node-info strong {
+  overflow: hidden;
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+}
+
+.knowledge-node-info a:hover {
+  color: var(--primary-dark);
+}
+
+.knowledge-node-info > span {
+  color: var(--text-muted);
+  font-size: 0.74rem;
+}
+
+.knowledge-node-progress {
+  grid-column: 2;
+  height: 0.32rem;
+  margin-top: 0.25rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.knowledge-node-progress > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: currentColor;
+}
+
+.status-mastered {
+  color: #15803d;
+}
+
+.status-practicing {
+  color: #2563eb;
+}
+
+.status-struggling {
+  color: #dc2626;
+}
+
+.status-not_started {
+  color: #64748b;
+}

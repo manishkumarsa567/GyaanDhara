@@ -1,0 +1,147 @@
+.teacher-activity-page {
+  width: min(850px, 100%);
+  margin: 0 auto;
+}
+
+.activity-back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 750;
+}
+
+.activity-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid #ccebe2;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #effcf7, #fffdf6);
+}
+
+.activity-heading > span {
+  font-size: 2rem;
+}
+
+.activity-heading div > p:first-child {
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.activity-heading h1 {
+  margin: 0.15rem 0;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.activity-heading div > p:last-child {
+  color: var(--text-muted);
+}
+
+.activity-questions {
+  display: grid;
+  gap: 1rem;
+}
+
+.activity-question {
+  display: grid;
+  gap: 0.85rem;
+  border: 1px solid var(--border);
+}
+
+.activity-question legend {
+  padding: 0 0.35rem;
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.activity-question h2 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.activity-options {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.activity-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.activity-options label.selected {
+  border-color: var(--primary);
+  background: var(--primary-subtle);
+}
+
+.activity-options input {
+  width: auto;
+  accent-color: var(--primary);
+}
+
+.activity-result {
+  text-align: center;
+}
+
+.activity-result > span {
+  display: block;
+  font-size: 2.2rem;
+}
+
+.activity-result > strong {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--primary-dark);
+  font-size: 2.2rem;
+}
+
+.activity-results-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1.25rem 0;
+  text-align: left;
+}
+
+.activity-results-list li {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: #f8fafc;
+  list-style-position: inside;
+}
+
+.activity-results-list li.correct strong {
+  color: #047857;
+}
+
+.activity-results-list li.incorrect strong {
+  color: #b91c1c;
+}
+
+.activity-results-list li span,
+.activity-results-list li p {
+  margin-left: 1.2rem;
+  color: var(--text-muted);
+}
+
+.activity-form-error,
+.activity-error {
+  color: var(--danger);
+}
+
+.activity-error {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+}

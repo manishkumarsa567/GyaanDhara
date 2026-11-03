@@ -1,0 +1,22 @@
+{
+  "name": "gyaandhara",
+  "version": "1.0.0",
+  "description": "GyaanDhara: AI-Enhanced Adaptive Gamified Learning System for Rural Education",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.4"
+  }
+}

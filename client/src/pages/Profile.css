@@ -1,0 +1,157 @@
+.profile-page {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #ccebe2;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #effcf7, #fffdf6);
+}
+
+.profile-avatar {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: white;
+  font-size: 1.7rem;
+}
+
+.profile-eyebrow,
+.profile-section-heading > p {
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.profile-header h1 {
+  margin: 0.15rem 0;
+}
+
+.profile-email {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.profile-details > div {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.profile-details span {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+}
+
+.profile-details strong {
+  color: var(--text);
+}
+
+.profile-location {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.profile-location h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.profile-location > div:first-child p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.profile-location-fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.75rem;
+}
+
+.profile-location-fields label {
+  display: grid;
+  flex: 1 1 200px;
+  gap: 0.3rem;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.profile-location-fields input {
+  min-width: 0;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: white;
+  color: var(--text);
+  font: inherit;
+}
+
+.profile-location-success {
+  color: #15803d;
+  font-size: 0.85rem;
+}
+
+.profile-location-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+}
+
+.profile-portfolio-section {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.profile-section-heading {
+  padding: 0 0.2rem;
+}
+
+.profile-section-heading h2 {
+  margin-top: 0.2rem;
+  font-size: 1.25rem;
+}
+
+.profile-portfolio-section .portfolio-page {
+  max-width: none;
+}
+
+.profile-teacher-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.profile-teacher-card > span {
+  font-size: 1.7rem;
+}
+
+.profile-teacher-card > div {
+  flex: 1;
+}
+
+.profile-teacher-card p {
+  margin-top: 0.25rem;
+  color: var(--text-muted);
+}
